@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    width: 100%;  /* make sure it stretches full width */
+}
+
+
+nav {
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    gap:80px;
+    
+}
+
+nav a {
+    
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+
