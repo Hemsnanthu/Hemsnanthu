@@ -1,1 +1,69 @@
-<p>about works!</p>
+<section
+  id="about"
+  class="relative h-screen flex items-center justify-center p-12 w-full text-white overflow-hidden"
+>
+  <!-- 🔹 Blurred Background -->
+  <div
+    class="absolute inset-0 bg-blue-400 bg-cover bg-center blur-sm"
+    
+  ></div>
+
+  <!-- 🔹 Content -->
+  <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <!-- Left Content -->
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      class="text-left font-extrabold"
+    >
+      <h2 class="text-4xl font-bold mb-6 text-blue-700">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-200">
+        Hi, I’m
+        <span
+          class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500"
+        >
+          <span class="relative text-white">Nanthakumar</span>
+        </span>
+        , a passionate and motivated Computer Science graduate with a strong
+        interest in Web Development and Software Engineering.
+        <br /><br />
+        Energetic and driven individual with a solid educational background and
+        a passion for IT Sector and professional software employer. Known for
+        strong problem-solving abilities, effective communication, and a
+        collaborative mindset. Demonstrates a quick learning curve and a
+        commitment to achieving goals. Eager to bring enthusiasm and a fresh
+        perspective to a dynamic team and contribute to meaningful projects
+      </p>
+    </div>
+
+    <!-- Right Profile Image -->
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      class="flex justify-center"
+    >
+      <div class="flip-card w-80 h-80">
+        <div class="flip-card-inner">
+          <!-- Front Side -->
+          <div class="flip-card-front">
+            <img
+              src="/assets/linkd4 (1).jpg"
+              alt="Profile Picture"
+              class="w-full h-full object-cover rounded-xl border-4 border-l-yellow-300 border-t-blue-300 border-r-red-300 border-b-green-300"
+            />
+          </div>
+          <!-- Back Side -->
+          <div
+            class="flip-card-back flex items-center justify-center bg-blue-500 rounded-xl text-white"
+          >
+            <img
+              src="/assets/linkdback.jpg"
+              alt="Another Image"
+              class="w-full h-full object-cover rounded-xl border-4 border-white"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
