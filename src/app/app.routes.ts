@@ -6,36 +6,12 @@ import { HeaderComponent } from './compnents/header/header.component';
 import { FooterComponent } from './compnents/footer/footer.component';
 import { SkillsComponent } from './compnents/skills/skills.component';
 import { ProjectsComponent } from './compnents/projects/projects.component';
+import { BlogComponent } from './compnents/blog/blog.component';
 
 
 export const routes: Routes = [
 
-    {
-        path:'',
-        component:HomeComponent
-    },
-    {
-        path:'header',
-        component:HeaderComponent
-    },
-    {
-        path:'about',
-        component:AboutComponent
-    },
-    {
-        path:'contact',
-        component:ContactComponent
-    },
-    {
-        path:'footer',
-        component:FooterComponent
-    },
-    {
-        path:'skills',
-        component:SkillsComponent
-    },
-    {
-        path:'projects',
-        component:ProjectsComponent
-    },
+     { path: '', component: HomeComponent },   // Home + sections
+  { path: 'blog', component: BlogComponent },
+  { path: '**', redirectTo: '' }  
 ];

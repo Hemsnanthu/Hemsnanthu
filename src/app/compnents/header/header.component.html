@@ -1,13 +1,17 @@
-<nav class="bg-red-500 text-white p-4 flex justify-between items-center  top-0 left-0 w-full shadow-lg z-50">
+<nav
+  class="bg-red-500 text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full shadow-lg z-50 transition-transform duration-300"
+  [ngClass]="{ '-translate-y-full': isNavbarHidden }"
+>
   <!-- Left Side Logo + Name -->
   <div class="flex items-center gap-3">
-    <img src="assets/logo2.png" alt="Profile" class="h-10 w-10 rounded-full  shadow-md" />
+    <img src="assets/logo2.png" alt="Profile" class="h-10 w-10 rounded-full shadow-md" />
     <span class="font-bold text-xl tracking-wide">Nanthakumar</span>
   </div>
 
   <!-- Right Side Navbar Links -->
   <div class="space-x-6 font-medium">
     <a href="#home" class="hover:text-yellow-300 transition">Home</a>
+    <a routerLink="/blog" class="hover:text-yellow-300 transition">Blogs</a>
     <a href="#about" class="hover:text-yellow-300 transition">About</a>
     <a href="#skills" class="hover:text-yellow-300 transition">Skills</a>
     <a href="#projects" class="hover:text-yellow-300 transition">Projects</a>

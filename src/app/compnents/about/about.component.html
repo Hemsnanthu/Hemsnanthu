@@ -1,23 +1,25 @@
 <section
   id="about"
-  class="relative h-screen flex items-center justify-center p-12 w-full text-white overflow-hidden"
+  class="relative min-h-screen flex items-center justify-center px-6 py-12 w-full text-white overflow-hidden"
 >
   <!-- 🔹 Blurred Background -->
   <div
     class="absolute inset-0 bg-blue-400 bg-cover bg-center blur-sm"
-    
   ></div>
 
   <!-- 🔹 Content -->
-  <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+    
     <!-- Left Content -->
     <div
       data-aos="fade-right"
       data-aos-duration="1000"
-      class="text-left font-extrabold"
+      class="text-center lg:text-left"
     >
-      <h2 class="text-4xl font-bold mb-6 text-blue-700">About Me</h2>
-      <p class="text-lg leading-relaxed text-gray-200">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-blue-700">
+        About Me
+      </h2>
+      <p class="text-base sm:text-lg leading-relaxed text-gray-200">
         Hi, I’m
         <span
           class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500"
@@ -32,7 +34,7 @@
         strong problem-solving abilities, effective communication, and a
         collaborative mindset. Demonstrates a quick learning curve and a
         commitment to achieving goals. Eager to bring enthusiasm and a fresh
-        perspective to a dynamic team and contribute to meaningful projects
+        perspective to a dynamic team and contribute to meaningful projects.
       </p>
     </div>
 
@@ -42,7 +44,7 @@
       data-aos-duration="1000"
       class="flex justify-center"
     >
-      <div class="flip-card w-80 h-80">
+      <div class="flip-card w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80">
         <div class="flip-card-inner">
           <!-- Front Side -->
           <div class="flip-card-front">
@@ -65,5 +67,6 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
