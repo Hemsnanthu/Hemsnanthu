@@ -2,19 +2,65 @@
   class="bg-red-500 text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full shadow-lg z-50 transition-transform duration-300"
   [ngClass]="{ '-translate-y-full': isNavbarHidden }"
 >
-  <!-- Left Side Logo + Name -->
-  <div class="flex items-center gap-3">
-    <img src="assets/logo2.png" alt="Profile" class="h-10 w-10 rounded-full shadow-md" />
+
+  <!-- Logo -->
+  <div class="flex items-center gap-3 cursor-pointer">
+    <img
+      src="assets/logo2.png"
+      alt="Profile"
+      class="h-10 w-10 rounded-full shadow-md"
+    />
     <span class="font-bold text-xl tracking-wide">Nantha</span>
   </div>
 
-  <!-- Right Side Navbar Links -->
-  <div class="space-x-6 font-medium">
-    <a href="#home" class="hover:text-yellow-300 transition">Home</a>
-    <a routerLink="/blog" class="hover:text-yellow-300 transition">Blogs</a>
-    <a href="#about" class="hover:text-yellow-300 transition">About</a>
-    <a href="#skills" class="hover:text-yellow-300 transition">Skills</a>
-    <a href="#projects" class="hover:text-yellow-300 transition">Projects</a>
-    <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+  <!-- Desktop Links -->
+  <div class="hidden md:flex space-x-6 font-medium">
+    <a href="#home" class="hover:text-green-500 transition">Home</a>
+    <a (click)="goToBlog()" class="hover:text-green-500 transition cursor-pointer">Blogs</a>
+    <a href="#about" class="hover:text-green-500 transition">About</a>
+    <a href="#skills" class="hover:text-green-500 transition">Skills</a>
+    <a href="#projects" class="hover:text-green-500 transition">Projects</a>
+    <a href="#contact" class="hover:text-green-500 transition">Contact</a>
   </div>
+
+  <!-- Mobile Hamburger -->
+  <button
+    class="md:hidden focus:outline-none"
+    (click)="toggleMobileMenu()"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        [attr.d]="isMobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
+      />
+    </svg>
+  </button>
 </nav>
+
+<!-- Mobile Menu -->
+<div
+  class="fixed top-0 left-0 w-full h-full bg-white z-40 transform transition-transform duration-300 ease-in-out md:hidden"
+  [ngClass]="isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'"
+>
+  <div class="flex flex-col h-full px-6 py-20 space-y-6 text-lg font-medium">
+    <a href="#home" (click)="toggleMobileMenu()" class="hover:text-green-500 transition">Home</a>
+    <a (click)="goToBlog(); toggleMobileMenu()" class="hover:text-green-500 transition cursor-pointer">Blogs</a>
+    <a href="#about" (click)="toggleMobileMenu()" class="hover:text-green-500 transition">About</a>
+    <a href="#skills" (click)="toggleMobileMenu()" class="hover:text-green-500 transition">Skills</a>
+    <a href="#projects" (click)="toggleMobileMenu()" class="hover:text-green-500 transition">Projects</a>
+    <a href="#contact" (click)="toggleMobileMenu()" class="hover:text-green-500 transition">Contact</a>
+
+    <button
+      class="mt-8 font-semibold px-4 py-3 rounded-md bg-green-500 text-white hover:bg-green-600 transition-all duration-300"
+    >
+      Resume
+    </button>
+  </div>
+</div>
