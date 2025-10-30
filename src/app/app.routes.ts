@@ -7,11 +7,13 @@ import { FooterComponent } from './compnents/footer/footer.component';
 import { SkillsComponent } from './compnents/skills/skills.component';
 import { ProjectsComponent } from './compnents/projects/projects.component';
 import { BlogComponent } from './compnents/blog/blog.component';
+import { LinktreeComponent } from './compnents/linktree/linktree.component';
 
 
 export const routes: Routes = [
-
-     { path: '', component: HomeComponent },   // Home + sections
+  { path: '', pathMatch: 'full', redirectTo: 'portfolio' },         // Home + sections
+  { path: 'portfolio', component: HomeComponent },   // Home + sections
   { path: 'blog', component: BlogComponent },
-  { path: '**', redirectTo: '' }  
+  {path:'links',component:LinktreeComponent},
+  { path: '**', redirectTo: 'portfolio' }
 ];

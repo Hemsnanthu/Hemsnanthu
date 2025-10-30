@@ -1,0 +1,24 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black via-gray-900 to-black animate-gradient text-white font-[Poppins]">
+ <div [className]="'flex flex-col items-center gap-6 p-6 rounded-lg shadow-lg bg-yellow-800'">
+     <img
+    src='assets/logo.png'
+    alt="Profile"
+    class="w-24 h-24 rounded-full border-4 border-gray-700 mb-4 shadow-lg"
+  />
+
+  <h1 class="text-2xl font-semibold mb-6 tracking-wide">{{ profile.name }}</h1>
+
+  <div class="flex flex-col gap-3 w-64">
+    @for (link of profile.links; track $index) {
+    <a
+      
+      [href]="link.url"
+      target="_blank"
+      class="flex items-center justify-center gap-2 py-3 bg-white hover:bg-[#333] rounded-full text-black hover:text-white transition-all duration-300 ease-in-out text-lg font-medium shadow-md hover:shadow-lg"
+    >
+      <i [class]="link.icon + ' text-xl'"></i>
+      {{ link.label }}
+    </a>}
+  </div>
+  </div>
+</div>

@@ -2,68 +2,148 @@
   id="skills"
   class="relative min-h-screen flex flex-col items-center justify-center px-6 py-16 text-white overflow-hidden"
 >
-  <!-- Background Gradient -->
-  <div class="absolute inset-0 bg-gradient-to-r from-pink-300 via-red-600 to-yellow-500 bg-[length:100%_200%] animate-gradient"></div>
+  <!-- 🔹 Animated Gradient Background -->
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-600 to-blue-600 bg-[length:400%_400%] animate-gradientMove"
+  ></div>
 
-  <!-- Content -->
+  <!-- 🔹 Overlay for clarity -->
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+  <!-- 🔹 Content -->
   <div class="relative z-10 text-center mb-12">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold">Skills</h1>
-    <p class="mt-6 text-white uppercase tracking-widest text-sm sm:text-base">
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg"
+    >
+      Skills
+    </h1>
+    <p
+      class="mt-6 text-white/90 uppercase tracking-widest text-sm sm:text-base"
+    >
       I constantly try to improve
     </p>
   </div>
 
-  <!-- Skills Grid -->
-  <div class="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6  sm:gap-10">
+  <!-- 🔹 Skills Grid -->
+  <div
+    class="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6 sm:gap-10"
+  >
     <!-- Skill Item -->
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="HTML">
-      <span class="text-sm sm:text-base">HTML</span>
-    </div>
-    
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="CSS">
-      <span class="text-sm sm:text-base">CSS</span>
-    </div>
-    
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="JavaScript">
-      <span class="text-sm sm:text-base">JavaScript</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#3b82f6] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        class="w-8 h-8"
+        alt="HTML"
+      />
+      <span class="text-base font-semibold">HTML</span>
     </div>
 
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="TypeScript">
-      <span class="text-sm sm:text-base">TypeScript</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#0ea5e9] hover:border-cyan-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        class="w-8 h-8"
+        alt="CSS"
+      />
+      <span class="text-base font-semibold">CSS</span>
     </div>
 
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="Angular">
-      <span class="text-sm sm:text-base">Angular</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#facc15] hover:border-yellow-300 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        class="w-8 h-8"
+        alt="JavaScript"
+      />
+      <span class="text-base font-semibold">JavaScript</span>
     </div>
 
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="Java">
-      <span class="text-sm sm:text-base">Java</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#0284c7] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        class="w-8 h-8"
+        alt="TypeScript"
+      />
+      <span class="text-base font-semibold">TypeScript</span>
     </div>
 
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="MySQL">
-      <span class="text-sm sm:text-base">MySQL</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#ef4444] hover:border-pink-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        class="w-8 h-8"
+        alt="Angular"
+      />
+      <span class="text-base font-semibold">Angular</span>
     </div>
 
-    <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6 sm:w-8 sm:h-8" alt="Git">
-      <span class="text-sm sm:text-base">Git</span>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-orange-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+        class="w-8 h-8"
+        alt="Java"
+      />
+      <span class="text-base font-semibold">Java</span>
     </div>
 
-   <div class="flex items-center gap-2 bg-neutral-900 px-3 py-2 sm:px-4 sm:py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform duration-300">
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" 
-    class="w-6 h-6 sm:w-8 sm:h-8" 
-    alt="GitHub" 
-  />
-  <span class="text-sm sm:text-base">GitHub</span>
-</div>
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#22c55e] hover:border-green-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        class="w-8 h-8"
+        alt="MySQL"
+      />
+      <span class="text-base font-semibold">MySQL</span>
+    </div>
 
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-orange-400 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        class="w-8 h-8"
+        alt="Git"
+      />
+      <span class="text-base font-semibold">Git</span>
+    </div>
+
+    <div
+      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#ffffff] hover:border-gray-300 transition-all duration-300 backdrop-blur-md"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+        class="w-8 h-8"
+        alt="GitHub"
+      />
+      <span class="text-base font-semibold">GitHub</span>
+    </div>
   </div>
 </section>
+
+<!-- 🔹 Gradient Animation -->
+<style>
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .animate-gradientMove {
+    animation: gradientMove 10s ease infinite;
+  }
+</style>
