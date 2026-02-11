@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}",
-
-  ],
+  darkMode: 'class', // 👈 REQUIRED
+  content: ['./src/**/*.{html,ts}'],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
+
 
 
 

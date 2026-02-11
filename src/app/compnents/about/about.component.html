@@ -69,34 +69,26 @@
     </div>
 
     <!-- Right Profile Image -->
-    <div
-      data-aos="fade-left"
-      data-aos-duration="1000"
-      class="flex justify-center"
-    >
-      <div class="flip-card w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80">
-        <div class="flip-card-inner">
-          <!-- Front Side -->
-          <div class="flip-card-front">
-            <img
-              src="/assets/linkd4 (1).jpg"
-              alt="Profile Picture"
-              class="w-full h-full object-cover rounded-xl border-4 border-l-pink-400 border-t-blue-400 border-r-purple-400 border-b-cyan-400"
-            />
-          </div>
-          <!-- Back Side -->
-          <div
-            class="flip-card-back flex items-center justify-center bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl"
-          >
-            <img
-              src="/assets/linkdback.jpg"
-              alt="Another Image"
-              class="w-full h-full object-cover rounded-xl border-4 border-white/70"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Right Profile Image (Large, No Flip) -->
+<div
+  data-aos="fade-left"
+  data-aos-duration="1000"
+  class="relative flex justify-center lg:justify-end"
+>
+
+
+  <!-- Main Image -->
+  <img
+    src="/assets/linkd4 (1).jpg"
+    alt="Profile Picture"
+    class="w-64 h-80 sm:w-72 sm:h-[28rem] md:w-[380px] md:h-[500px]
+           object-cover
+           rounded-[3rem]
+           shadow-2xl
+           border-4 border-white/30
+           animate-float"
+  />
+</div>
 
   </div>
 </section>
@@ -118,29 +110,22 @@
     animation: gradientMove 10s ease infinite;
   }
 
-  /* Flip Card Animation */
-  .flip-card {
-    perspective: 1000px;
+  /* Floating up & down animation */
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
   }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  50% {
+    transform: translateY(-16px);
   }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  100% {
+    transform: translateY(0);
   }
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 0.75rem;
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
+}
+
+.animate-float {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+ 
 </style>
