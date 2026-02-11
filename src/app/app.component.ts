@@ -10,10 +10,11 @@ import { AboutComponent } from "./compnents/about/about.component";
 import { BlogComponent } from './compnents/blog/blog.component';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,BlogComponent, HomeComponent, HeaderComponent, AboutComponent, FooterComponent, SkillsComponent, ProjectsComponent, ContactComponent,],
+  imports: [RouterOutlet, BlogComponent, HomeComponent, HeaderComponent, AboutComponent, FooterComponent, SkillsComponent, ProjectsComponent, ContactComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
