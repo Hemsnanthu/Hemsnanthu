@@ -1,182 +1,110 @@
-<section
-  id="skills"
-  class="relative min-h-screen flex flex-col items-center justify-center px-6 py-16 text-white overflow-hidden"
->
-  <!-- 🔹 Animated Gradient Background -->
-  <div
-    class="absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-600 to-blue-600 bg-[length:400%_400%] animate-gradientMove"
-  ></div>
+<section id="skills" class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-10 w-full overflow-hidden bg-slate-950 font-sans">
+  
+  <!-- 🔹 Animated Glowing Blobs Background -->
+  <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob"></div>
+  <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000"></div>
 
-  <!-- 🔹 Overlay for clarity -->
-  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-
-  <!-- 🔹 Content -->
-  <div class="relative z-10 text-center mb-12">
-    <h1
-      class="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg"
-    >
-      Skills
+  <!-- 🔹 Content Header -->
+  <div class="relative z-10 text-center mb-16 space-y-4">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+      My <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400">Skills</span>
     </h1>
-    <p
-      class="mt-6 text-white/90 uppercase tracking-widest text-sm sm:text-base"
-    >
+    <p class="text-slate-400 font-light text-sm sm:text-base uppercase tracking-widest">
       I constantly try to improve
     </p>
   </div>
 
   <!-- 🔹 Skills Grid -->
-  <div
-    class="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6 sm:gap-10"
-  >
-    <!-- Skill Item -->
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#3b82f6] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-        class="w-8 h-8"
-        alt="HTML"
-      />
-      <span class="text-base font-semibold">HTML</span>
+  <div class="relative z-10 w-full max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8">
+    
+    <!-- HTML -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-orange-500/50 hover:shadow-[0_0_30px_-5px_rgba(249,115,22,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="HTML" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">HTML</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#0ea5e9] hover:border-cyan-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-        class="w-8 h-8"
-        alt="CSS"
-      />
-      <span class="text-base font-semibold">CSS</span>
+    <!-- CSS -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-blue-500/50 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="CSS" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">CSS</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#facc15] hover:border-yellow-300 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        class="w-8 h-8"
-        alt="JavaScript"
-      />
-      <span class="text-base font-semibold">JavaScript</span>
+    <!-- JavaScript -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-yellow-400/50 hover:shadow-[0_0_30px_-5px_rgba(250,204,21,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="JavaScript" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">JavaScript</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#0284c7] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-        class="w-8 h-8"
-        alt="TypeScript"
-      />
-      <span class="text-base font-semibold">TypeScript</span>
+    <!-- TypeScript -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-blue-400/50 hover:shadow-[0_0_30px_-5px_rgba(96,165,250,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="TypeScript" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">TypeScript</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#ef4444] hover:border-pink-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-        class="w-8 h-8"
-        alt="Angular"
-      />
-      <span class="text-base font-semibold">Angular</span>
+    <!-- Angular -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-red-500/50 hover:shadow-[0_0_30px_-5px_rgba(239,68,68,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="Angular" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">Angular</span>
     </div>
 
-     <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#3b82f6] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-        class="w-8 h-8"
-        alt="HTML"
-      />
-      <span class="text-base font-semibold">React</span>
+    <!-- React -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-cyan-400/50 hover:shadow-[0_0_30px_-5px_rgba(34,211,238,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="React" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">React</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-orange-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-        class="w-8 h-8"
-        alt="Java"
-      />
-      <span class="text-base font-semibold">Java</span>
+    <!-- Java -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-orange-500/50 hover:shadow-[0_0_30px_-5px_rgba(249,115,22,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="Java" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">Java</span>
     </div>
 
-     <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-green-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-        class="w-8 h-8"
-        alt="Java"
-      />
-      <span class="text-base font-semibold">Springboot</span>
+    <!-- Spring Boot -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-green-500/50 hover:shadow-[0_0_30px_-5px_rgba(34,197,94,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="Spring Boot" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">Spring Boot</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#22c55e] hover:border-blue-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-        class="w-8 h-8"
-        alt="MySQL"
-      />
-      <span class="text-base font-semibold">MySQL</span>
+    <!-- MySQL -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-blue-500/50 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="MySQL" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">MySQL</span>
     </div>
 
-     <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-green-400 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-        class="w-8 h-8"
-        alt="Java"
-      />
-      <span class="text-base font-semibold">MongoDB</span>
+    <!-- MongoDB -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-green-500/50 hover:shadow-[0_0_30px_-5px_rgba(34,197,94,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="MongoDB" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">MongoDB</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#f97316] hover:border-gray-300 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-        class="w-8 h-8"
-        alt="Git"
-      />
-      <span class="text-base font-semibold">Git</span>
+    <!-- Git -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-orange-600/50 hover:shadow-[0_0_30px_-5px_rgba(234,88,12,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-12 h-12 sm:w-14 sm:h-14 transition-transform duration-300 group-hover:scale-110" alt="Git" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">Git</span>
     </div>
 
-    <div
-      class="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_20px_#ffffff] hover:border-gray-300 transition-all duration-300 backdrop-blur-md"
-    >
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-        class="w-8 h-8"
-        alt="GitHub"
-      />
-      <span class="text-base font-semibold">GitHub</span>
+    <!-- GitHub -->
+    <div class="group flex flex-col items-center justify-center gap-4 p-6 bg-white/[0.02] border border-white/10 rounded-3xl backdrop-blur-md transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:bg-white/[0.05] hover:border-slate-400/50 hover:shadow-[0_0_30px_-5px_rgba(148,163,184,0.3)]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" class="w-12 h-12 sm:w-14 sm:h-14 invert opacity-90 transition-transform duration-300 group-hover:scale-110 group-hover:opacity-100" alt="GitHub" />
+      <span class="text-slate-300 font-medium tracking-wide group-hover:text-white transition-colors">GitHub</span>
     </div>
+
   </div>
 </section>
 
-<!-- 🔹 Gradient Animation -->
+<!-- Include these animations only once in your global CSS -->
 <style>
-  @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  /* Blob Animation */
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
   }
-  .animate-gradientMove {
-    animation: gradientMove 10s ease infinite;
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 </style>
